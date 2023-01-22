@@ -1,0 +1,11 @@
+#!/usr/bin/env python
+
+import os
+
+ip = input("IP address: ")
+pairing_port = input("Pairing port: ")
+pairing_code = input("Pairing code: ")
+os.system(f"adb pair {ip}:{pairing_port} {pairing_code}")
+
+connection_port = input("Connection port: ")
+os.system(f"adb connect {ip}:{connection_port}")

@@ -1,0 +1,5 @@
+#/usr/bin/env bash
+sudo systemctl stop docker.service
+echo 'Stopped docker.service'
+sudo systemctl stop docker.socket
+echo 'Stopped docker.socket'
